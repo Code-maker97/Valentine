@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will you be my Valentine? ❤️</title>
+    <!-- Tailwind for layout utilities -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&family=Gochi+Hand&display=swap" rel="stylesheet">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external JS (deferred) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="page" id="scrapbook-page">
+        <!-- Decoration -->
+        <div class="washi washi-tl"></div>
+        <div class="washi washi-tr"></div>
+        
+        <!-- Interactive Stickers -->
+        <div class="sticker rose-tl">🌹</div>
+        <div class="sticker cat" id="cat-sticker">🐱</div>
+        <div class="sticker bear" id="easter-bear">🧸</div>
+        <div class="sticker envelope" id="envelope-sticker">✉️</div>
+        
+        <!-- Main Question State -->
+        <div id="proposal-content" class="flex flex-col items-center w-full h-full">
+            <h1 class="question">Will you be my valentine?</h1>
+            <p class="hint-text" id="status-msg">There's only one right answer!</p>
+            
+            <div id="button-area">
+                <button id="yes-btn" class="heart-button">
+                    <span>Yes</span>
+                </button>
+                
+                <button id="no-btn" class="no-badge">
+                    <span id="no-text">No</span>
+                    <span class="text-sm">☹</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hidden Success State -->
+        <div id="success-screen" class="flex flex-col items-center justify-center h-full">
+            <h1 class="question">I knew it! ❤️</h1>
+            <p class="hint-text">The best choice you've ever made.</p>
+            <div class="text-7xl mt-4 animate-bounce">🥰✨</div>
+            <button onclick="location.reload()" class="mt-8 text-pink-400 underline">Ask me again?</button>
+        </div>
+    </div>
+
+    <!-- The Love Letter Modal -->
+    <div id="note-modal">
+        <div class="handwritten-note">
+            <p>Dearest Valentine,</p>
+            <br>
+            <p>I hope you noticed that I made it literally impossible to say no. That's how much I like you.</p>
+            <br>
+            <p>Forever yours,</p>
+            <p>— Me xoxo</p>
+        </div>
+    </div>
+
+</body>
+</html>
